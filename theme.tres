@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://b1pdoq0bqp0ql"]
+
+[ext_resource type="Texture2D" uid="uid://cvcnkdkfie5ef" path="res://assets/merc_frame.png" id="1_02n6l"]
+[ext_resource type="Texture2D" uid="uid://ds25sdu8pmc8w" path="res://assets/job_frame.png" id="1_p8m50"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_28r3g"]
+texture = ExtResource("1_p8m50")
+texture_margin_left = 30.0
+texture_margin_top = 30.0
+texture_margin_right = 30.0
+texture_margin_bottom = 30.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2043b"]
+texture = ExtResource("1_02n6l")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[resource]
+JobFrame/base_type = &"PanelContainer"
+JobFrame/styles/panel = SubResource("StyleBoxTexture_28r3g")
+MercFrameContainer/base_type = &"PanelContainer"
+MercFrameContainer/styles/panel = SubResource("StyleBoxTexture_2043b")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnb665fpbut04"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_738ot"]
+bg_color = Color(0.417416, 0.439856, 0.449411, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2ll4"]
+bg_color = Color(0, 0.8, 0.345098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "3*"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Paladin
+"
+horizontal_alignment = 1
+
+[node name="health" type="ProgressBar" parent="."]
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_738ot")
+theme_override_styles/fill = SubResource("StyleBoxFlat_k2ll4")
+value = 67.0

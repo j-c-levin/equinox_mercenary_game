@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://bywyxh2imo3x4"]
+
+[ext_resource type="Theme" uid="uid://b1pdoq0bqp0ql" path="res://theme.tres" id="1_ncfv2"]
+[ext_resource type="Script" path="res://scripts/merc_frame.gd" id="2_x3g5r"]
+
+[node name="MercFrame" type="PanelContainer"]
+offset_right = 157.0
+offset_bottom = 98.0
+size_flags_vertical = 4
+theme = ExtResource("1_ncfv2")
+theme_type_variation = &"MercFrameContainer"
+script = ExtResource("2_x3g5r")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+columns = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="rating" type="Label" parent="GridContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "3⁂"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="GridContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="type" type="Label" parent="GridContainer/MarginContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Paladin"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="GridContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="affinity" type="Label" parent="GridContainer/MarginContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "urban"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer4" type="MarginContainer" parent="GridContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="cost" type="Label" parent="GridContainer/MarginContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "10₵"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmvrbm6g4tuwp"]
+
+[ext_resource type="PackedScene" uid="uid://dnb665fpbut04" path="res://scenes/job_merc_frame.tscn" id="1_bswsh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lc5v7"]
+bg_color = Color(0.573754, 0.608705, 0.608234, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k8h0u"]
+bg_color = Color(0.013, 0.78, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jtma0"]
+bg_color = Color(0.86338, 0.0557231, 0.0321262, 1)
+
+[node name="JobFrame" type="PanelContainer"]
+offset_right = 64.0
+offset_bottom = 114.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_type_variation = &"JobFrame"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Completion" type="ProgressBar" parent="VBoxContainer"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_lc5v7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_k8h0u")
+value = 75.0
+
+[node name="Threat" type="ProgressBar" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_jtma0")
+value = 37.0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="JobMercFrame" parent="VBoxContainer/GridContainer" instance=ExtResource("1_bswsh")]
+layout_mode = 2
+
+[node name="JobMercFrame2" parent="VBoxContainer/GridContainer" instance=ExtResource("1_bswsh")]
+layout_mode = 2
+
+[node name="JobMercFrame3" parent="VBoxContainer/GridContainer" instance=ExtResource("1_bswsh")]
+layout_mode = 2
+
+[node name="JobMercFrame4" parent="VBoxContainer/GridContainer" instance=ExtResource("1_bswsh")]
+layout_mode = 2

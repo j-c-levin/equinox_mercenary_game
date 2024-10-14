@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://sisgt16yb0p8"]
+
+[ext_resource type="Script" path="res://scripts/opportunities_board.gd" id="1_hjb7w"]
+[ext_resource type="PackedScene" uid="uid://bywyxh2imo3x4" path="res://scenes/merc_frame.tscn" id="1_xp8gx"]
+
+[node name="Opportunities" type="PanelContainer"]
+offset_left = 276.0
+offset_top = 40.0
+offset_right = 433.0
+offset_bottom = 462.0
+size_flags_horizontal = 3
+script = ExtResource("1_hjb7w")
+MercFrameScene = ExtResource("1_xp8gx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MercFrame" parent="VBoxContainer" instance=ExtResource("1_xp8gx")]
+layout_mode = 2
+
+[node name="MercFrame2" parent="VBoxContainer" instance=ExtResource("1_xp8gx")]
+layout_mode = 2
+
+[node name="MercFrame3" parent="VBoxContainer" instance=ExtResource("1_xp8gx")]
+layout_mode = 2
