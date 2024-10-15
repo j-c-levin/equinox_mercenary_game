@@ -1,12 +1,12 @@
-extends Node2D
+extends Node
 
-@onready var merc_frame = %MercFrame
-@onready var merc_frame_2 = %MercFrame2
-@onready var merc_frame_3 = %MercFrame3
+@onready var merc_frame: PanelContainer = %MercFrame
+@onready var merc_frame_2: PanelContainer = %MercFrame2
+@onready var merc_frame_3: PanelContainer = %MercFrame3
 
-@onready var merc_frame_4 = %MercFrame4
-@onready var merc_frame_5 = %MercFrame5
-@onready var merc_frame_6 = %MercFrame6
+@onready var merc_frame_4: PanelContainer = %MercFrame4
+@onready var merc_frame_5: PanelContainer = %MercFrame5
+@onready var merc_frame_6: PanelContainer = %MercFrame6
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

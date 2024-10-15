@@ -4,10 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bywyxh2imo3x4" path="res://scenes/merc_frame.tscn" id="1_xp8gx"]
 
 [node name="Opportunities" type="PanelContainer"]
-offset_left = 276.0
-offset_top = 40.0
-offset_right = 433.0
-offset_bottom = 462.0
+offset_right = 157.0
+offset_bottom = 422.0
 size_flags_horizontal = 3
 script = ExtResource("1_hjb7w")
 MercFrameScene = ExtResource("1_xp8gx")
@@ -24,3 +22,7 @@ layout_mode = 2
 
 [node name="MercFrame3" parent="VBoxContainer" instance=ExtResource("1_xp8gx")]
 layout_mode = 2
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true

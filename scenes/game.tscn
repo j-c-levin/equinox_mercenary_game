@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c15q12scqxqy8"]
 
 [ext_resource type="Texture2D" uid="uid://du5gp5wxq225e" path="res://assets/background.jpg" id="1_fy1y5"]
-[ext_resource type="PackedScene" uid="uid://bywyxh2imo3x4" path="res://scenes/merc_frame.tscn" id="2_2r3m2"]
+[ext_resource type="PackedScene" uid="uid://bri4emuxxrrdd" path="res://scenes/roster.tscn" id="2_f4rm4"]
 [ext_resource type="PackedScene" uid="uid://sisgt16yb0p8" path="res://scenes/opportunities_board.tscn" id="3_07ang"]
 [ext_resource type="PackedScene" uid="uid://bmvrbm6g4tuwp" path="res://scenes/job_frame.tscn" id="3_x5vgu"]
 
@@ -13,57 +13,7 @@ texture = ExtResource("1_fy1y5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Roster" type="PanelContainer" parent="CanvasLayer"]
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -98.0
-grow_horizontal = 2
-grow_vertical = 0
-size_flags_horizontal = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Roster"]
-layout_mode = 2
-alignment = 1
-
-[node name="MercFrame2" parent="CanvasLayer/Roster/HBoxContainer" instance=ExtResource("2_2r3m2")]
-layout_mode = 2
-
-[node name="Spacer" type="Control" parent="CanvasLayer/Roster/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MercFrame3" parent="CanvasLayer/Roster/HBoxContainer" instance=ExtResource("2_2r3m2")]
-layout_mode = 2
-
-[node name="Spacer2" type="Control" parent="CanvasLayer/Roster/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MercFrame4" parent="CanvasLayer/Roster/HBoxContainer" instance=ExtResource("2_2r3m2")]
-layout_mode = 2
-
-[node name="Spacer3" type="Control" parent="CanvasLayer/Roster/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MercFrame5" parent="CanvasLayer/Roster/HBoxContainer" instance=ExtResource("2_2r3m2")]
-layout_mode = 2
-
-[node name="Spacer4" type="Control" parent="CanvasLayer/Roster/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MercFrame6" parent="CanvasLayer/Roster/HBoxContainer" instance=ExtResource("2_2r3m2")]
-layout_mode = 2
-
-[node name="Spacer5" type="Control" parent="CanvasLayer/Roster/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="MercFrame7" parent="CanvasLayer/Roster/HBoxContainer" instance=ExtResource("2_2r3m2")]
-layout_mode = 2
+[node name="Roster" parent="CanvasLayer" instance=ExtResource("2_f4rm4")]
 
 [node name="Opportunities" parent="CanvasLayer" instance=ExtResource("3_07ang")]
 anchors_preset = 1

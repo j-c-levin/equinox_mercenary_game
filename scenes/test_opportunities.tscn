@@ -54,10 +54,6 @@ offset_right = 856.0
 offset_bottom = 108.0
 text = "Timer"
 
-[node name="Timer" type="Timer" parent="."]
-unique_name_in_owner = true
-one_shot = true
-
 [node name="Opportunities5" parent="." instance=ExtResource("1_my4er")]
 unique_name_in_owner = true
 offset_left = 685.0

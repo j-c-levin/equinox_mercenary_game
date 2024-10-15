@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://bri4emuxxrrdd"]
+
+[ext_resource type="PackedScene" uid="uid://bywyxh2imo3x4" path="res://scenes/merc_frame.tscn" id="1_d45h3"]
+[ext_resource type="Script" path="res://scenes/roster.gd" id="1_pfxq6"]
+
+[node name="Roster" type="PanelContainer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -643.0
+offset_bottom = -505.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+script = ExtResource("1_pfxq6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="MercFrame2" parent="HBoxContainer" instance=ExtResource("1_d45h3")]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MercFrame3" parent="HBoxContainer" instance=ExtResource("1_d45h3")]
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MercFrame4" parent="HBoxContainer" instance=ExtResource("1_d45h3")]
+layout_mode = 2
+
+[node name="Spacer3" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MercFrame5" parent="HBoxContainer" instance=ExtResource("1_d45h3")]
+layout_mode = 2
+
+[node name="Spacer4" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MercFrame6" parent="HBoxContainer" instance=ExtResource("1_d45h3")]
+layout_mode = 2
+
+[node name="Spacer5" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MercFrame7" parent="HBoxContainer" instance=ExtResource("1_d45h3")]
+layout_mode = 2

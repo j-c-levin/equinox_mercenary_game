@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://c21yaqyc5vaqg"]
+
+[ext_resource type="Script" path="res://scripts/test_dragging_mercframe.gd" id="1_3qb5u"]
+[ext_resource type="PackedScene" uid="uid://sisgt16yb0p8" path="res://scenes/opportunities_board.tscn" id="1_war63"]
+[ext_resource type="PackedScene" uid="uid://bri4emuxxrrdd" path="res://scenes/roster.tscn" id="2_yx5xg"]
+
+[node name="TestDraggingMercframe" type="Node"]
+script = ExtResource("1_3qb5u")
+
+[node name="Opportunities" parent="." instance=ExtResource("1_war63")]
+unique_name_in_owner = true
+offset_left = 942.0
+offset_top = 31.0
+offset_right = 1099.0
+offset_bottom = 453.0
+
+[node name="Roster" parent="." instance=ExtResource("2_yx5xg")]
+unique_name_in_owner = true
+anchors_preset = 0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 55.0
+offset_top = 463.0
+offset_right = 1037.0
+offset_bottom = 601.0
+grow_horizontal = 1
+grow_vertical = 1

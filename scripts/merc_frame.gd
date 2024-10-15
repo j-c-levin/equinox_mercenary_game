@@ -5,10 +5,10 @@ extends PanelContainer
 @onready var affinity: Label = %affinity
 @onready var cost: Label = %"cost"
 
-var rating_int: int      = 0
-var type_str: String     = ""
-var affinity_str: String = ""
-var cost_int: int        = 0
+var rating_int: int      = 3
+var type_str: String     = "Paladin"
+var affinity_str: String = "urban"
+var cost_int: int        = 10
 
 enum Field { RATING, TYPE, AFFINITY, COST }
 
@@ -56,3 +56,16 @@ func show_all():
 	type.visible = true
 	affinity.visible = true
 	cost.visible = true
+
+func _get_drag_data(_at_position: Vector2) -> Variant:
+	var preview = self.duplicate()
+	set_drag_preview(preview)
+	await get_tree().process_frame
+	preview.roster_mode()
+	var d = {
+		"rating": rating_int,
+		"type": type_str,
+		"affinity": affinity_str,
+		"cost": cost_int
+	}
+	return self

@@ -13,8 +13,6 @@ extends Node
 @onready var opportunities_7 = %Opportunities7
 @onready var opportunities_8 = %Opportunities8
 
-@onready var timer = %Timer
-
 func _ready():
 	toggle_once.pressed.connect(toggle_once_pressed)
 	toggle_timer.pressed.connect(timeout_pressed)
@@ -22,7 +20,6 @@ func _ready():
 	opportunities_2.add_n_merc_frames(1)
 	opportunities_3.add_n_merc_frames(2)
 	opportunities_4.add_n_merc_frames(3)
-	timer.timeout.connect(timeout)
 	opportunities_6.add_n_merc_frames(1)
 	opportunities_7.add_n_merc_frames(2)
 	opportunities_8.add_n_merc_frames(3)
@@ -34,11 +31,8 @@ func toggle_once_pressed():
 	opportunities_4.add_merc_frames_to_three()
 	
 func timeout_pressed():
-	timer.start()
-	
-func timeout():
-	opportunities_5.add_merc_frames_to_three()
-	opportunities_6.add_merc_frames_to_three()
-	opportunities_7.add_merc_frames_to_three()
-	opportunities_8.add_merc_frames_to_three()
+	opportunities_5.start_timer()
+	opportunities_6.start_timer()
+	opportunities_7.start_timer()
+	opportunities_8.start_timer()
 
