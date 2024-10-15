@@ -60,12 +60,11 @@ func show_all():
 func _get_drag_data(_at_position: Vector2) -> Variant:
 	var preview = self.duplicate()
 	set_drag_preview(preview)
-	await get_tree().process_frame
 	preview.roster_mode()
-	var d = {
-		"rating": rating_int,
+	var data = {
+		"rating": 1,
 		"type": type_str,
-		"affinity": affinity_str,
-		"cost": cost_int
+		"affinity": "affinity_strhel",
+		"cost": 100
 	}
-	return self
+	return data
